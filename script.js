@@ -1,7 +1,7 @@
 async function fetchQuote() {
     try {
         // Replace with your Blob Storage URL after Step 3
-        const response = await fetch('https://dailyquotestoragegeneha123.blob.core.windows.net/quotes2/quotes.json');
+        const response = await fetch('https://dailyquotestorageneha123.blob.core.windows.net/quotes2/quotes.json');
         const quotes = await response.json();
         const today = new Date().getDay(); // Use day of week for simplicity
         const quoteOfTheDay = quotes[today % quotes.length]; // Cycle through quotes
